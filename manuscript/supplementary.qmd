@@ -12,6 +12,8 @@ format:
       file: header-supp.tex
 ---
 
+{{< pagebreak >}}
+
 **Table S1 | List of bacterial taxa used in the experiment.** Taxonomic assignment, isolate identification codes, and corresponding GenBank accession numbers for 16S rRNA gene sequences are shown.
 
   ----------------------------------- ---------------- -----------------------

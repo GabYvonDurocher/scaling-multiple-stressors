@@ -1,12 +1,9 @@
 project:
-  type: manuscript
+  type: default
   output-dir: _output
-
-manuscript:
-  article: manuscript.qmd
-  notebooks:
-    - notebook: supplementary.qmd
-      title: "Supplementary Material"
+  render:
+    - manuscript.qmd
+    - supplementary.qmd
 
 format:
   pdf:
