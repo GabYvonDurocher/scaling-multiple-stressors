@@ -14,4 +14,4 @@ format:
   docx: default
 
 bibliography: references.bib
-csl: nature-microbiology.csl
+csl: the-isme-journal.csl
