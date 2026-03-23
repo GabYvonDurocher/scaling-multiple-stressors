@@ -1,7 +1,5 @@
 ---
 title: "A single trait predicts community assembly and ecosystem function under multiple environmental stressors"
-abstract: |
-  Predicting community assembly and ecosystem function from measurable traits remains a central challenge in ecology, particularly when organisms face multiple co-occurring environmental stressors whose combined effects are difficult to anticipate. Here we show that a single measurable trait, stress-specific growth rate, is sufficient to predict community composition and biomass yield under factorial stressor combinations. We tested this using synthetic bacterial microcosms exposed to all combinations of temperature, pH and salinity stress, a model system offering full factorial control over stressor regimes. Temperature drove reductions in diversity while salinity drove compositional divergence. A Bayesian growth-rate-to-composition model predicted relative abundances across stress regimes (weighted R² = 0.44); propagating compositional uncertainty into an abundance-weighted mean growth (AWM) metric then predicted endpoint community biomass yield with high accuracy (optical density at 600 nm, OD$_{600}$; R² = 0.88), matching an oracle baseline that used observed rather than predicted compositions. Blocked cross-validation on held-out community identities confirmed out-of-sample generalisability. These results demonstrate that when abiotic filtering dominates assembly, a single response trait can bridge the gap from individual physiology to emergent community structure and ecosystem function, and they generate testable predictions for when this trait-based approach should fail in more complex settings.
 format:
   pdf:
     include-in-header:
@@ -12,6 +10,14 @@ crossref:
   fig-prefix: "Fig."
   eq-prefix: "Eq."
 ---
+
+\newpage
+
+## Abstract {.unnumbered}
+
+Predicting community assembly and ecosystem function from measurable traits remains a central challenge in ecology, particularly when organisms face multiple co-occurring environmental stressors whose combined effects are difficult to anticipate. Here we show that a single measurable trait, stress-specific growth rate, is sufficient to predict community composition and biomass yield under factorial stressor combinations. We tested this using synthetic bacterial microcosms exposed to all combinations of temperature, pH and salinity stress, a model system offering full factorial control over stressor regimes. Temperature drove reductions in diversity while salinity drove compositional divergence. A Bayesian growth-rate-to-composition model predicted relative abundances across stress regimes (weighted R² = 0.44); propagating compositional uncertainty into an abundance-weighted mean growth (AWM) metric then predicted endpoint community biomass yield with high accuracy (optical density at 600 nm, OD$_{600}$; R² = 0.88), matching an oracle baseline that used observed rather than predicted compositions. Blocked cross-validation on held-out community identities confirmed out-of-sample generalisability. These results demonstrate that when abiotic filtering dominates assembly, a single response trait can bridge the gap from individual physiology to emergent community structure and ecosystem function, and they generate testable predictions for when this trait-based approach should fail in more complex settings.
+
+\newpage
 
 ## Introduction
 
@@ -162,14 +168,6 @@ Our growth-rate-to-composition and growth-rate-to-biomass mappings are most like
 ## Conclusions
 
 Our results support a mechanistic route by which multiple stressors scale from taxon-level growth performance to community-level biomass: stressors reshape growth-rate ranks, altered ranks shift relative abundances through environmental filtering, and abundance-weighted growth distributions predict community biomass yield. This pathway provides an empirically grounded proof of principle, with quantitative, testable benchmarks, for forecasting microbial community responses when abiotic filtering is strong and growth rate can be measured under matched stress regimes. The approach generates clear, testable predictions for when it should fail: as biotic interactions strengthen, spatial structure develops, evolutionary change alters growth-rate rankings, or fluctuating environments favour bet-hedging strategies over maximal growth. Extending this framework to broader species pools, open systems such as chemostats, and longer timescales will determine how far growth-rate-based forecasting can generalise. These tests will reveal when additional traits (survival under stress, resource-use efficiency, interaction-mediated effects) become necessary, and will establish the quantitative boundaries within which single-trait prediction remains a reliable forecasting tool.
-
-**Funding Sources** -- This work was supported by the Natural Environment Research Council (NERC, project reference 2237640) and by UK Research and Innovation (UKRI) under research grant NE/Y000889/1.
-
-**Data Availability** -- All analysis scripts and processed data are available at https://github.com/GabYvonDurocher/scaling-multiple-stressors. 16S rRNA gene sequences for the twelve bacterial isolates have been deposited in GenBank under accession numbers PX560147--PX560158.
-
-**Author Contributions** -- HC: Investigation, Methodology, Data curation, Writing -- original draft. IC: Formal analysis, Software, Visualization, Writing -- original draft. SBB: Investigation, Methodology, Resources. DR: Resources, Supervision. GYD: Conceptualization, Funding acquisition, Supervision, Writing -- review & editing. HC and IC contributed equally.
-
-**Conflict of Interest** -- The authors declare no competing interests.
 
 ## References
 
