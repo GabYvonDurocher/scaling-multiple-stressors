@@ -14,4 +14,4 @@ format:
   docx: default
 
 bibliography: references.bib
-csl: the-isme-journal.csl
+csl: ecology-letters.csl
