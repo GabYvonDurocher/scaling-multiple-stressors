@@ -79,7 +79,7 @@ format:
 
 {{< pagebreak >}}
 
-**Table S4** **| Mapping dominant ASVs to isolate reference sequences.** ASVs were ranked by total read count across the 12-isolate community dataset, and the dominant ASVs (cumulative fraction ≤ 0.951) were mapped to isolate 16S reference sequences (PX560147--PX560158) using BLASTn. For each ASV, we report total reads, the cumulative fraction of reads captured up to that ASV (running sum), the best-matching isolate accession, and the percent identity of the alignment. This confirms that the most abundant ASVs correspond to the inoculated taxa. Multiple ASVs may map to the same isolate reference sequence due to sequencing error, within-isolate 16S variation, or closely related amplicon variants, and are retained here to document the dominant read structure.
+**Table S4** **| Mapping dominant ASVs to isolate reference sequences.** ASVs were ranked by total read count across the 12-isolate community dataset, and the dominant ASVs (cumulative fraction $\leq$ 0.951) were mapped to isolate 16S reference sequences (PX560147--PX560158) using BLASTn. For each ASV, we report total reads, the cumulative fraction of reads captured up to that ASV (running sum), the best-matching isolate accession, and the percent identity of the alignment. This confirms that the most abundant ASVs correspond to the inoculated taxa. Multiple ASVs may map to the same isolate reference sequence due to sequencing error, within-isolate 16S variation, or closely related amplicon variants, and are retained here to document the dominant read structure.
 
   ------------ ----------------- ------------------------- ----------------------- ----------------------
   **ASV_ID**   **Total reads**   **Cumulative fraction**   **Isolate accession**   **Percent identity**
@@ -113,7 +113,7 @@ format:
 
 {{< pagebreak >}}
 
-**Table S5 | Tukey post-hoc contrasts for Shannon diversity (H$'$) among stress regimes.** Each row compares the mean H′ of the first group minus the second (contrast). estimate = mean difference in H′ units (positive ⇒ first group \> second). SE = standard error of the difference; df = residual degrees of freedom from the one-way ANOVA (N=80, groups=8, df=72). stat = t-ratio for the contrast; p adj = Tukey HSD--adjusted p value across all pairwise tests. Hedges g = standardized effect size (Hedges' g) computed from the ANOVA pooled residual SD with the small-sample J correction; g low/g high = unadjusted 95% confidence interval for g. Positive g indicates higher diversity in the first group; negative g indicates higher diversity in the second. Significant contrasts at α = 0.05 are those with p adj \< 0.05.
+**Table S5 | Tukey post-hoc contrasts for Shannon diversity (H$'$) among stress regimes.** Each row compares the mean $H'$ of the first group minus the second (contrast). estimate = mean difference in $H'$ units (positive $\Rightarrow$ first group \> second). SE = standard error of the difference; df = residual degrees of freedom from the one-way ANOVA (N=80, groups=8, df=72). stat = t-ratio for the contrast; p adj = Tukey HSD--adjusted p value across all pairwise tests. Hedges g = standardized effect size (Hedges' g) computed from the ANOVA pooled residual SD with the small-sample J correction; g low/g high = unadjusted 95% confidence interval for g. Positive g indicates higher diversity in the first group; negative g indicates higher diversity in the second. Significant contrasts at $\alpha$ = 0.05 are those with p adj \< 0.05.
 
 \footnotesize
 
@@ -316,10 +316,10 @@ ASV\_2 & 0.754 & Bacteroidota & Bacteroidia & Flavobacteriales & Weeksellaceae &
 {{< pagebreak >}}
 
 **Table S8 | Standardised growth (z-scores) by stress and taxon.**
-Summary of within-regime standardised growth for each taxon. Columns: stress (treatment), id lab (abbreviated taxon label), mu (mean z-score across replicates), and se (standard error). Z-scoring was performed within each stress treatment from replicate values $(z = (g_{i} - {\overset{ˉ}{g}}_{\text{stress}})/{sd}_{\text{stress}}))$.
+Summary of within-regime standardised growth for each taxon. Columns: stress (treatment), id lab (abbreviated taxon label), mu (mean z-score across replicates), and se (standard error). Z-scoring was performed within each stress treatment from replicate values $(z = (g_{i} - {\bar{g}}_{\text{stress}})/{sd}_{\text{stress}}))$.
 
   --------------- ------------ -------- --------
-  **Stress**      **Id lab**   **μ**    **se**
+  **Stress**      **Id lab**   **$\mu$**    **se**
 
   **Control**     Aer.         0.153    0.459
 
@@ -764,7 +764,7 @@ Summary of within-regime standardised growth for each taxon. Columns: stress (tr
 
 **Table S23 | Agreement between growth-rate estimation methods.** Pearson and Spearman correlations between mean growth-rate estimates per taxon $\times$ stress regime: the Gompertz estimates used in the pipeline, fresh Gompertz refits to the raw time series, and model-free log-linear estimates (steepest rolling-window slope of log$_{10}$ OD). n differs among comparisons because refits fail on flat (no-growth) curves. Within-regime rank agreement between log-linear and pipeline estimates (the quantity the composition model uses) ranged from Spearman $\rho$ = 0.78 (Temp) to 0.97 (pHSalTemp); per-regime values are in results/tables/Table_S23b of the code repository.
 
-| **Comparison** | **Pearson r** | **Spearman ρ** | **n (taxon × regime)** |
+| **Comparison** | **Pearson r** | **Spearman $\rho$** | **n (taxon × regime)** |
 | --- | --- | --- | --- |
 | Log-linear vs pipeline Gompertz | 0.951 | 0.941 | 96 |
 | Log-linear vs Gompertz refit | 0.710 | 0.892 | 89 |
@@ -838,6 +838,21 @@ Summary of within-regime standardised growth for each taxon. Columns: stress (tr
 | SalTemp | 22 | 0.148 | 0.130 | 0.818 |
 | pHSalTemp | 19 | 0.148 | 0.114 | 0.737 |
 | Pooled (wR$^2$ = 0.166; OD R$^2$ = −0.51) | 84 | 0.140 | 0.111 | 0.810 |
+
+{{< pagebreak >}}
+
+**Table S29 | Homogeneity of multivariate dispersion among stress regimes.** Distance of each eight-taxon community to its treatment centroid, from `vegan::betadisper` on the Bray--Curtis distances used for the global and pairwise PERMANOVA (Table S6); n is the number of communities per regime. A permutation test of equal mean dispersion among regimes (`vegan::permutest`, 999 permutations) gave F(7,72) = 0.74, P = 0.62 (scripts/17_betadisper.R).
+
+| **Stress regime** | **n** | **Mean distance to centroid** | **SD** |
+| --- | --- | --- | --- |
+| Control | 10 | 0.151 | 0.101 |
+| pH | 10 | 0.229 | 0.146 |
+| Sal | 10 | 0.191 | 0.102 |
+| Temp | 10 | 0.235 | 0.263 |
+| pHSal | 10 | 0.298 | 0.140 |
+| pHTemp | 10 | 0.347 | 0.379 |
+| SalTemp | 10 | 0.236 | 0.245 |
+| pHSalTemp | 10 | 0.218 | 0.252 |
 
 {{< pagebreak >}}
 

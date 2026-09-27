@@ -8,7 +8,7 @@ This folder records the deposit of the raw 16S rRNA gene amplicon reads that und
 - **Samples deposited:** the 172 endpoint community samples analysed in the paper, plus 3 extraction blanks (175 samples in total).
 - **Data:** raw paired-end FASTQ reads (Illumina NovaSeq 6000, PE250), one forward and one reverse file per sample (350 files), each registered with its MD5 checksum. Reads are as delivered by the sequencing provider, with primers not removed.
 - **Excluded:** the 88 evolved-line samples and 13 monoculture samples sequenced on the same run belong to a separate study and were not deposited here.
-- **Release:** the study is held private and will be released on publication.
+- **Release:** the study has been released and is publicly available at ENA.
 - **Provenance:** the reads come from the Novogene sequencing delivery archived at <https://doi.org/10.5281/zenodo.8289513>.
 
 ## Files

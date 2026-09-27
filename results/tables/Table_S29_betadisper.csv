@@ -1,0 +1,9 @@
+Stress,n,mean_distance_to_centroid,sd_distance_to_centroid,permutest_F,permutest_df1,permutest_df2,permutest_P,permutations
+Control,10,0.151,0.101,0.74,7,72,0.619,999
+pH,10,0.229,0.146,0.74,7,72,0.619,999
+Sal,10,0.191,0.102,0.74,7,72,0.619,999
+Temp,10,0.235,0.263,0.74,7,72,0.619,999
+pHSal,10,0.298,0.14,0.74,7,72,0.619,999
+pHTemp,10,0.347,0.379,0.74,7,72,0.619,999
+SalTemp,10,0.236,0.245,0.74,7,72,0.619,999
+pHSalTemp,10,0.218,0.252,0.74,7,72,0.619,999

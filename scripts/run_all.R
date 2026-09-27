@@ -7,7 +7,7 @@
 # to the repository root.
 source("scripts/utils_functions.R"); ensure_packages()
 
-# Runtime: steps 01-04, 06, 08, 11 and 15 are quick (06 only defines the
+# Runtime: steps 01-04, 06, 08, 11, 15 and 17 are quick (06 only defines the
 # growth-model functions). Step 07 can take a while but does not use Stan: it fits five
 # candidate growth models to every monoculture time series by multi-start
 # nonlinear least squares, and regenerates the per-taxon curve-fit plots and
@@ -35,7 +35,8 @@ steps <- c(
   "scripts/12_composition_ablation.R",
   "scripts/13_leave_one_taxon_out.R",
   "scripts/14_singles_to_combos.R",
-  "scripts/15_main_figures.R"
+  "scripts/15_main_figures.R",
+  "scripts/17_betadisper.R"
 )
 for (s in steps) {
   message(">>> Running: ", s)
