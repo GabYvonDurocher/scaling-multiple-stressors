@@ -1,7 +1,7 @@
 # ======================================================================
 # 14_singles_to_combos.R
 #
-# KILL TEST 3: can community outcomes under COMBINED stressors be
+# Transfer test 3: can community outcomes under COMBINED stressors be
 # predicted from communities observed only under the control and
 # SINGLE stressors?
 #

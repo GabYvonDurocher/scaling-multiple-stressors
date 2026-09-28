@@ -1,7 +1,7 @@
 # ======================================================================
 # 12_composition_ablation.R
 #
-# KILL TEST 1: does growth add out-of-sample information beyond taxon
+# Transfer test 1: does growth add out-of-sample information beyond taxon
 # identity? Ablates the composition model under blocked community-
 # identity cross-validation:
 #

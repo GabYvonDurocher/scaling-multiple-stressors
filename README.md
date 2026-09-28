@@ -9,7 +9,7 @@ This repository contains all code, data, and manuscript source files for:
 
 ## Overview
 
-We show that stress-specific monoculture growth rates predict how defined bacterial communities assemble under factorial combinations of temperature, pH and salinity. A Bayesian softmax model maps taxon-level growth rates to relative abundances across stress regimes, and an abundance-weighted mean growth metric links predicted composition to endpoint community abundance (optical density at 600 nm). Composition prediction transfers to unseen communities, to the rank order of taxa absent from every fitted community, to stress regimes lacking community data and to stressor combinations calibrated only on single stressors, whereas absolute abundance is predicted accurately only within calibrated regimes, where it is carried by the dominant, fastest-growing members. The analysis pipeline runs from raw amplicon-sequencing and growth-curve data through to publication-ready figures and a typeset manuscript, and includes the reviewer-response and transfer analyses (scripts 08-15; Tables S19-S28).
+We show that stress-specific monoculture growth rates predict how defined bacterial communities assemble under factorial combinations of temperature, pH and salinity. A Bayesian softmax model maps taxon-level growth rates to relative abundances across stress regimes, and an abundance-weighted mean growth metric links predicted composition to endpoint community abundance (optical density at 600 nm). Composition prediction transfers to unseen communities, to the rank order of taxa absent from every fitted community, to stress regimes lacking community data and to stressor combinations calibrated only on single stressors, whereas absolute abundance is predicted accurately only within calibrated regimes, where it is carried by the dominant, fastest-growing members. The analysis pipeline runs from raw amplicon-sequencing and growth-curve data through to publication-ready figures and a typeset manuscript, and includes the transfer and sensitivity analyses (scripts 08-15; Tables S19-S28).
 
 ## Repository structure
 
@@ -178,9 +178,9 @@ Defines parametric growth-curve functions (Baranyi, Gompertz, Buchanan, logistic
 
 Reads per-taxon OD time-series from `data/Cut_OD_data/`, fits all candidate growth models via `nls.multstart`, selects the best model per curve by AICc, and exports fitted parameters and diagnostic plots (Figs. S1-S3). Results feed into the growth-rate CSV files in `data/` used by the main pipeline.
 
-### Reviewer-response analysis scripts (08-14)
+### Transfer and sensitivity analysis scripts (08-14)
 
-Added while revising the manuscript after peer review; called by `scripts/run_all.R` after script 05. All source `scripts/utils_bayes_prep.R`, a shared helper that mirrors the data preparation of script 05 so results are directly comparable.
+Called by `scripts/run_all.R` after script 05. All source `scripts/utils_bayes_prep.R`, a shared helper that mirrors the data preparation of script 05 so results are directly comparable.
 
 #### Script 08 -- Abundance-model decomposition
 

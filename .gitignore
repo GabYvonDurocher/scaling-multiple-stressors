@@ -2,8 +2,6 @@
 prompts/
 
 # ── Internal, not for distribution ──
-reviews/
-ele_submission/
 .claude/
 
 # ── macOS ──

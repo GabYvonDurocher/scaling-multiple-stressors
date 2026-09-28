@@ -1,7 +1,7 @@
 # ======================================================================
 # 13_leave_one_taxon_out.R
 #
-# KILL TEST 2: does the growth-to-abundance mapping predict taxa whose
+# Transfer test 2: does the growth-to-abundance mapping predict taxa whose
 # community behaviour was never used for calibration?
 #
 # For each taxon j: the model is fitted only on communities that do NOT
