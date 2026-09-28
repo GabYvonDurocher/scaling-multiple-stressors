@@ -31,7 +31,6 @@ scaling-multiple-stressors/
 |   |-- supplementary.qmd          # Supplementary material
 |   |-- references.bib             # Bibliography
 |   |-- nature.csl                 # Citation style (Nature, numbered)
-|   |-- ecology-letters.csl        # Previous citation style (kept for reference)
 |   |-- header.tex                 # LaTeX preamble (main)
 |   |-- header-supp.tex            # LaTeX preamble (supplementary)
 |   |-- _quarto.yml                # Quarto project configuration
@@ -255,7 +254,7 @@ The manuscript is a [Quarto manuscript project](https://quarto.org/docs/manuscri
 - **`manuscript.qmd`** -- Main text (title, abstract, introduction, results, discussion, methods and end matter)
 - **`supplementary.qmd`** -- Supplementary material (additional figures, Tables S1-S28, supplementary methods)
 
-Both documents share `references.bib` (BibTeX bibliography) and a CSL citation style file (`nature.csl`, the numbered Nature style used for the Nature Communications submission; `ecology-letters.csl` is kept for reference). Custom LaTeX preambles (`header.tex`, `header-supp.tex`) handle author affiliations, figure caption formatting ("**Fig. N |** Title"), line numbering, and supplementary figure numbering (S-prefix).
+Both documents share `references.bib` (BibTeX bibliography) and a CSL citation style file (`nature.csl`, the numbered Nature style). Custom LaTeX preambles (`header.tex`, `header-supp.tex`) handle author affiliations, figure caption formatting ("**Fig. N |** Title"), line numbering, and supplementary figure numbering (S-prefix).
 
 ### Rendering the manuscript
 

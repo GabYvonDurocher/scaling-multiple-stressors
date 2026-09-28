@@ -2,9 +2,8 @@
 # 09_loso_cv.R
 #
 # Leave-one-stress-out (LOSO) cross-validation of the trait-based
-# composition -> biomass pipeline, as requested by Reviewer 4
-# (Ecology Letters review, 2026): does the growth-rate mapping
-# generalise across environments, not just across communities?
+# composition -> biomass pipeline: does the growth-rate mapping transfer
+# to stress regimes absent from the fit, not just to unseen communities?
 #
 # Design: each of the 8 stress regimes is held out in turn. The
 # Dirichlet-softmax model is fitted to the other 7 regimes only, and

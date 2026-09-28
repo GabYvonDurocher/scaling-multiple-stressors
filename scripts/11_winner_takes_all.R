@@ -1,8 +1,7 @@
 # ======================================================================
 # 11_winner_takes_all.R
 #
-# Winner-takes-all baseline (Reviewer 4, Ecology Letters review 2026):
-# how well can composition and biomass be predicted by simply assuming
+# Winner-takes-all baseline: how well can composition and biomass be predicted by simply assuming
 # that the community member with the highest monoculture growth rate in
 # a given stress regime dominates completely?
 #

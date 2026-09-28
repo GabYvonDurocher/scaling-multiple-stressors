@@ -1,15 +1,15 @@
 # ======================================================================
 # 10_trait_sensitivity.R
 #
-# Two reviewer-requested analyses (Ecology Letters review, 2026), run as
-# one suite because they share the monoculture growth-curve refits:
+# Two sensitivity analyses, run as one suite because they share the
+# monoculture growth-curve refits:
 #
-# (A) Growth-rate estimation sensitivity (Reviewer 3): re-estimate
+# (A) Growth-rate estimation sensitivity: re-estimate
 #     exponential growth rates with simple log-linear fits over the
 #     exponential window of each monoculture OD time series, and compare
 #     with the Gompertz estimates used in the pipeline.
 #
-# (B) Alternative monoculture traits (Reviewer 1): compare the predictive
+# (B) Alternative monoculture traits: compare the predictive
 #     performance of lag time and carrying capacity (log10 nmax), already
 #     estimated in the growth-curve fits, against growth rate, by running
 #     the full composition -> biomass pipeline with each trait in turn.
@@ -192,7 +192,7 @@ if (file.exists(refit_cache)) {
 }
 
 # ======================================================================
-# 3) GROWTH-RATE METHOD COMPARISON (Reviewer 3) -> Table S23, Fig S9
+# 3) GROWTH-RATE METHOD COMPARISON -> Table S23, Fig S9
 # ======================================================================
 message("[3/5] Comparing growth-rate estimation methods ...")
 
@@ -260,7 +260,7 @@ ggsave(P_FIG("Fig_S9_loglinear_vs_gompertz.tiff"), p_s9, width = 170, height = 1
        units = "mm", dpi = 600, device = ragg::agg_tiff, compression = "lzw")
 
 # ======================================================================
-# 4) TRAIT-SUBSTITUTED PIPELINE RUNS (Reviewers 1 & 3) -> Table S22
+# 4) TRAIT-SUBSTITUTED PIPELINE RUNS -> Table S22
 # ======================================================================
 message("[4/5] Running composition -> biomass pipeline per trait ...")
 

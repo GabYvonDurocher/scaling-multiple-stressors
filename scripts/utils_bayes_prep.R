@@ -1,8 +1,8 @@
 # ======================================================================
 # utils_bayes_prep.R
 #
-# Shared data preparation and helpers for the reviewer-response analyses
-# (scripts 08-10). Mirrors, line for line where possible, the data prep
+# Shared data preparation and helpers for the transfer and sensitivity
+# analyses (scripts 08-14). Mirrors, line for line where possible, the data prep
 # in scripts/05_fig3_bayes_od.R (Parts A and B) so that results are
 # directly comparable with the published pipeline.
 #

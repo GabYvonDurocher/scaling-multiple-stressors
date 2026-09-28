@@ -1,9 +1,9 @@
 # ======================================================================
 # 08_biomass_decomposition.R
 #
-# Marginal contribution of the growth trait to the biomass (OD600) model,
-# as requested by Reviewer 3 (Ecology Letters review, 2026) and reported
-# in the appeal letter. Produces Table S19.
+# Decomposition of the abundance (OD600) model: quantifies the marginal
+# contribution of the growth trait over the stress and richness terms.
+# Produces Table S19.
 #
 # Compares three nested models for community biomass:
 #   Null     : OD ~ Stress + Diversity              (10 parameters)
